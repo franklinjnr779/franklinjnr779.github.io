@@ -363,7 +363,7 @@ footer {
   }
 
   .link-container {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background-color: #000;
   }
 
@@ -378,7 +378,7 @@ footer {
   .item-container {
     margin-top: 4rem;
     display: block;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
   }
 
   .item button {
@@ -387,12 +387,19 @@ footer {
 
   .free {
     font-size: 14px;
+    margin-right: 1rem;
   }
 
   .free:focus {
     background-color: rgb(3, 180, 250);
     color: #ffffff;
     transition: ease-in all 100ms;
+  }
+
+  .col {
+    height: 350px;
+    width: 100vw;
+    /* border: 1px solid black; */
   }
 
   footer {
