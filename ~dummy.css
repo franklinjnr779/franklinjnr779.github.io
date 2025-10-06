@@ -1,0 +1,33 @@
+.links-c {
+  height: 110%;
+  border-right: none;
+  width: 55%;
+  display: flex;
+  padding-right: 5px;
+  align-items: start;
+  justify-content: start;
+  border: 1px solid black;
+}
+.mecadiv {
+  border: 1px solid purple;
+  height: auto;
+  width: auto;
+  padding: 6px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links-c-main {
+  height: 100%;
+  width: 95%;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: destination-in;
+  border: 1px solid green;
+}
