@@ -626,7 +626,7 @@ footer {
 }
 
 .coryt {
-  color: #585858;
+  color: #808080;
   font-size: 13px;
   font-weight: 600;
   /* border: 1px solid black; */
@@ -2013,12 +2013,12 @@ footer {
     flex-wrap: wrap;
   }
   .logo-cnt {
-    height: 50px;
+    height: 45px;
     width: 11%;
     display: flex;
-    align-items: end;
+    align-items: start;
+    padding-top: 3px;
     justify-content: center;
-    padding-bottom: 0;
     /* border: 1px solid #000; */
   }
   .lgm {
@@ -2033,28 +2033,28 @@ footer {
     width: 33px;
   }
   .tx-p {
-    height: 50px;
+    height: 45px;
     width: 88%;
     flex-wrap: wrap;
     display: flex;
     padding-left: 1px;
-    align-items: end;
+    align-items: center;
     padding-right: 5px;
     /* border: 1px solid #ff0000; */
   }
   .tx-c {
-    height: auto;
+    height: 45px;
     width: 50%;
     display: flex;
     align-items: center;
-    /* border: 1px solid #ff4500; */
+    /* border: 1px solid blue; */
     gap: 1px;
   }
   .tx1p {
     height: auto;
     width: auto;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     /* border: 1px solid #000; */
   }
@@ -2093,9 +2093,47 @@ footer {
   .mbxcontainer {
     display: flex;
     justify-content: end;
-    height: auto;
+    height: 45px;
     width: 50%;
+    /* border: 1px solid purple; */
+  }
+  .mnbx-move {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: auto;
     /* border: 1px solid #000; */
+    padding-left: 3px;
+  }
+  .menuboxcon {
+    height: 35px;
+    background-color: transparent;
+    color: gray;
+    display: flex;
+    align-items: start;
+    padding-left: 0;
+    padding-top: 0;
+    justify-content: center;
+    /* border: 1px solid seagreen; */
+    visibility: visible;
+  }
+
+  .menu-btn-n {
+    height: auto;
+    width: 40px;
+    background: none;
+    display: flex;
+    border: none;
+    color: gray;
+    font-size: 25px;
+    cursor: pointer;
+    /* border: 1px solid goldenrod; */
+  }
+  .menu-btn-n :hover,
+  :focus {
+    outline: none;
+    border: none;
+    color: rgb(15, 138, 12);
   }
 
   .frmX {
@@ -2202,7 +2240,7 @@ footer {
     /* border: 1px solid #000; */
     border-top: none; /* so it looks attached */
     border-radius: 0 0 6px 6px; /* rounded only at bottom */
-    max-height: 130px;
+    max-height: 120px;
     overflow-y: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: absolute;
@@ -2486,7 +2524,7 @@ footer {
   .t-caliber-c {
     height: 100%;
     border-right: none;
-    width: 83.33%;
+    width: 91.66%;
     display: flex;
     padding-right: 5px;
     align-items: start;
@@ -2506,7 +2544,7 @@ footer {
     display: flex;
     align-items: end;
     height: 100px;
-    width: 83.33%;
+    width: 91.66%;
     letter-spacing: 0.1px;
     font-size: 25px;
     font-weight: 700;
@@ -2531,6 +2569,7 @@ footer {
     );
     mask-composite: intersect;
     -webkit-mask-composite: destination-out;
+    padding-bottom: 30px;
     /* border: 1px solid #008000; */
     gap: 20px;
   }

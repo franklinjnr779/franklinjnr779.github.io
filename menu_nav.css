@@ -136,42 +136,6 @@ body.lock-scroll {
     width: 70%;
     /* border: 1px solid red; */
   }
-  .mnbx-move {
-    height: auto;
-    width: auto;
-    /* border: 1px solid #000; */
-  }
-  .menuboxcon {
-    height: 35px;
-    background-color: transparent;
-    color: gray;
-    display: flex;
-    align-items: start;
-    padding-left: 0;
-    padding-top: 0;
-    justify-content: center;
-    /* border: 1px solid seagreen; */
-    visibility: visible;
-  }
-
-  .menu-btn-n {
-    height: auto;
-    width: 40px;
-    background: none;
-    display: flex;
-    border: none;
-    color: gray;
-    font-size: 25px;
-    cursor: pointer;
-    /* border: 1px solid goldenrod; */
-  }
-  .menu-btn-n :hover,
-  :focus {
-    outline: none;
-    border: none;
-    color: rgb(15, 138, 12);
-  }
-
   .side-nav {
     position: fixed;
     display: flex;
@@ -202,15 +166,16 @@ body.lock-scroll {
   .xsinp {
     display: flex;
     height: auto;
-    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding-bottom: 30px;
+    padding-left: 45px;
     /* border: 1px solid #2e8b57; */
   }
   .xsu-c {
     display: flex;
-    height: 25px;
-    width: 70%;
+    padding-top: 15px;
+    height: auto;
+    width: 73%;
     padding-right: 0;
     /* border: 1px solid #000000; */
   }
@@ -223,9 +188,10 @@ body.lock-scroll {
   .x-in,
   .x-up {
     display: flex;
-    height: auto;
-    width: 50%;
+    height: 25px;
+    width: 35%;
     align-items: center;
+    /* border: 1px solid #000000; */
   }
   .x-in,
   .x-up a :hover,
@@ -235,7 +201,17 @@ body.lock-scroll {
 
   .x-up {
     justify-content: end;
-    border-left: 1px solid #333;
+  }
+  .vstro {
+    font-weight: 600;
+    display: flex;
+    height: 40px;
+    width: 20%;
+    font-size: 17px;
+    align-items: start;
+    justify-content: center;
+    color: #808080;
+    /* border: 1px solid #000; */
   }
 
   /* .nav-si-me-c {

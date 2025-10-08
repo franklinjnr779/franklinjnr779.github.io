@@ -402,7 +402,7 @@ body {
     /* border: 1px solid #ff4800; */
   }
   .pthlink {
-    width: 83.33%;
+    width: 91.66%;
     height: auto;
     display: flex;
     justify-content: start;
@@ -420,7 +420,7 @@ body {
   }
   .dex {
     height: auto;
-    width: 83.66%;
+    width: 91.66%;
     display: flex;
     justify-content: center;
     /* border: 1px solid #ff4800; */
