@@ -1988,7 +1988,6 @@ footer {
     flex-wrap: wrap;
     height: auto;
     width: 100%;
-    /* border-bottom: 1px solid #dcdcdc; */
     /* border: 1px solid #000; */
   }
   .head {
@@ -2026,20 +2025,22 @@ footer {
     height: auto;
     width: auto;
     /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
   }
   .lgm img {
     height: 32px;
     width: 33px;
   }
   .tx-p {
-    height: auto;
+    height: 50px;
     width: 88%;
     flex-wrap: wrap;
     display: flex;
     padding-left: 1px;
-    align-items: center;
+    align-items: end;
     padding-right: 5px;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #ff0000; */
   }
   .tx-c {
     height: auto;
@@ -2053,18 +2054,18 @@ footer {
     height: auto;
     width: auto;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     /* border: 1px solid #000; */
   }
   .tx1p-m {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     height: auto;
     width: auto;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     color: rgb(19, 71, 102);
     letter-spacing: 0.3px;
   }
@@ -2079,12 +2080,13 @@ footer {
   }
   .tx2p-m {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     height: auto;
     width: auto;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
+    /* border: 1px solid #000; */
     color: rgb(15, 138, 12);
     letter-spacing: 0.3px;
   }
@@ -2192,9 +2194,9 @@ footer {
   }
   .suggestions {
     list-style: none;
-    margin: 0; /* remove weird gaps */
+    margin: 0;
     padding: 0;
-    width: 97%; /* same width as form */
+    width: 97.66%; /* same width as form */
     background: #ffffff;
     /* background: #000; */
     /* border: 1px solid #000; */
@@ -2210,7 +2212,7 @@ footer {
     z-index: 1200;
   }
   .suggestions li {
-    padding: 8px 16px;
+    padding: 8px 14px;
     cursor: pointer;
     font-size: 11px;
     color: #333;
@@ -2228,7 +2230,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #000000; */
+    border-bottom: 1px solid #dcdcdc;
     /* border: none; */
   }
 
@@ -2311,7 +2313,7 @@ footer {
   }
   .one-caliber {
     height: auto;
-    width: 91%;
+    width: 92%;
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -2553,7 +2555,7 @@ footer {
     z-index: 1300;
     height: auto;
     bottom: 35%;
-    right: 10px;
+    right: 8px;
     /* background-color: red; */
     background: linear-gradient(to right, rgb(19, 72, 102), rgb(14, 138, 12));
     color: white;
