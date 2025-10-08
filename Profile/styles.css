@@ -25,16 +25,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid #ff4500; */
+  border: 1px solid #dcdcdc;
 }
 .cosol {
-  width: 50%;
+  width: 30%;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: start;
-  border: 1px solid #dcdcdc;
+  justify-content: center;
   padding-left: 8px;
+  /* border: 1px solid #000000; */
 }
 
 .pic-container {
@@ -90,27 +90,6 @@ body {
   font-size: 18px;
   color: rgb(15, 138, 12);
 }
-.gees {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 50%;
-  height: 42px;
-  padding-right: 10px;
-  border: 1px solid #dcdcdc;
-}
-.hamburg {
-  height: auto;
-  width: 40px;
-  background: none;
-  display: flex;
-  justify-content: end;
-  border: none;
-  padding-right: 3px;
-  color: gray;
-  font-size: 25px;
-  cursor: pointer;
-}
 
 .news-letter {
   height: 100vh;
@@ -148,16 +127,22 @@ body {
   outline: none;
 }
 
-.t2 h2 {
+.t2 {
+  height: auto;
+  width: auto;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.zx-1,
+.zx-2 {
   width: auto;
   height: auto;
   display: flex;
-  text-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
-  background-clip: text;
-  color: transparent;
   margin-bottom: 25px;
+  color: #202020;
   /* border: 1px solid black; */
 }
 
@@ -230,41 +215,27 @@ body {
 /* Extra-small devices */
 @media (max-width: 600px) {
   .commad {
-    width: 83.33%;
+    width: 91.66%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid #ff4500; */
+    border: 1px solid #dcdcdc;
   }
   .cosol {
-    padding-left: 8px;
-  }
-  .gees {
-    padding-bottom: 2px;
-  }
-  .hamburg {
+    width: 30%;
     height: auto;
-    width: 40px;
-    background: none;
     display: flex;
-    justify-content: end;
-    border: none;
-    padding-right: 3px;
-    color: gray;
-    font-size: 25px;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8px;
+    /* border: 1px solid #000000; */
   }
-  .hamburg :focus {
-    outline: none;
-    border: none;
-  }
-
   .news-letter {
     height: 100vh;
     width: 100%;
     /* border: 1px solid blue; */
-    margin-top: 25px;
+    margin-top: 15px;
     background: rgb(255, 255, 255);
   }
   .nl-container {
@@ -278,7 +249,7 @@ body {
 
   .nl {
     height: auto;
-    width: 83.33%;
+    width: 91.66%;
     display: block;
     border-radius: 5.5px;
     /* border: 1px solid seagreen; */
@@ -289,15 +260,20 @@ body {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
-  .t2 h2 {
+  .t2 {
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    /* border: 1px solid black; */
+  }
+  .zx-1,
+  .zx-2 {
     width: auto;
     height: auto;
     display: flex;
-    text-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
-    background-clip: text;
-    color: transparent;
     margin-bottom: 25px;
     /* border: 1px solid black; */
   }
@@ -344,7 +320,7 @@ body {
     border-radius: 25px;
     padding: 8px 16px;
     background-color: gray;
-    color: ghostwhite;
+    color: #ffffff;
     font-size: 12px;
     letter-spacing: 0.5px;
     font-weight: 600;

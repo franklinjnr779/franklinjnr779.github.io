@@ -17,7 +17,6 @@ body {
   background-color: transparent;
   color: #fff;
   overflow-x: hidden;
-  /* border: 1px solid blue; */
   transition: width 0.2s ease;
   z-index: 1100;
 }
@@ -30,7 +29,8 @@ body {
   overflow-y: auto;
   background-color: #fff;
   padding-top: 20px;
-  border: 1px solid gainsboro;
+  padding-bottom: 50px;
+  /* border: 1px solid gainsboro; */
   /* background: rgba(0, 0, 0, 0.534);
   backdrop-filter: blur(8px); */
 }
@@ -120,7 +120,7 @@ body.lock-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(6px); /* blur effect */
+  backdrop-filter: blur(4px); /* blur effect */
   background: rgba(0, 0, 0, 0.3); /* subtle dark tint */
   z-index: 1000; /* just below the side-nav */
   display: none; /* hidden by default */
@@ -133,10 +133,14 @@ body.lock-scroll {
 /* Responsive Design */
 @media (max-width: 600px) {
   .side-nav.open {
-    width: 60%;
+    width: 70%;
     /* border: 1px solid red; */
   }
-
+  .mnbx-move {
+    height: auto;
+    width: auto;
+    /* border: 1px solid #000; */
+  }
   .menuboxcon {
     height: 35px;
     background-color: transparent;
@@ -145,7 +149,7 @@ body.lock-scroll {
     align-items: start;
     padding-left: 0;
     padding-top: 0;
-    justify-content: end;
+    justify-content: center;
     /* border: 1px solid seagreen; */
     visibility: visible;
   }
@@ -160,6 +164,12 @@ body.lock-scroll {
     font-size: 25px;
     cursor: pointer;
     /* border: 1px solid goldenrod; */
+  }
+  .menu-btn-n :hover,
+  :focus {
+    outline: none;
+    border: none;
+    color: rgb(15, 138, 12);
   }
 
   .side-nav {
@@ -184,10 +194,8 @@ body.lock-scroll {
   }
 
   .sd-holder {
-    /* position: fixed; */
-    height: 99.5%;
-    width: 99%;
-    /* background-color: #0000ff; */
+    height: 100%;
+    width: 100%;
     border-radius: 2px;
     /* border: 1px solid #2e8b57; */
   }
