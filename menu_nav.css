@@ -29,7 +29,7 @@ body {
   overflow-y: auto;
   background-color: #fff;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   /* border: 1px solid gainsboro; */
   /* background: rgba(0, 0, 0, 0.534);
   backdrop-filter: blur(8px); */
@@ -190,6 +190,7 @@ body.lock-scroll {
     display: flex;
     height: 25px;
     width: 35%;
+    font-size: 12px;
     align-items: center;
     /* border: 1px solid #000000; */
   }
@@ -205,10 +206,9 @@ body.lock-scroll {
   .vstro {
     font-weight: 600;
     display: flex;
-    height: 40px;
+    height: auto;
     width: 20%;
-    font-size: 17px;
-    align-items: start;
+    font-size: 15px;
     justify-content: center;
     color: #808080;
     /* border: 1px solid #000; */
@@ -280,38 +280,6 @@ body.lock-scroll {
     width: 40%;
   }
 }
-
-/* .menuboxcon {
-  height: auto;
-  background-color: transparent;
-  color: gray;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 5px;
-  padding-top: 6px;
-  justify-content: flex-end;
-  border: 1px solid seagreen;
-}
-
-.menu-btn-n {
-  height: 40px;
-  width: 40px;
-  background: none;
-  display: flex;
-  text-align: end;
-  border: none;
-  color: gray;
-  font-size: 22px;
-  cursor: pointer;
-  z-index: 1001;
-  border: 1px solid goldenrod;
-} */
-/* .menu-btn-n :hover,
-:focus {
-  outline: none;
-  border: none;
-}  */
 
 /* .col-xl-1 {
   width: 8.33%;
