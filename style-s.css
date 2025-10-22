@@ -1019,7 +1019,6 @@ footer {
     background: linear-gradient(to bottom, #faf9f6, #ffffff);
     padding-bottom: 20px;
     /* border: 1px solid #000000; */
-    z-index: 1;
   }
   .one-caliber {
     height: auto;
@@ -2103,7 +2102,7 @@ footer {
     align-items: center;
     width: auto;
     /* border: 1px solid #000; */
-    padding-left: 4px;
+    padding-left: 3px;
   }
   .menuboxcon {
     height: auto;
