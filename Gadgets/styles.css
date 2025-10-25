@@ -225,11 +225,11 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 15px;
+    gap: 8px;
   }
   .gX-img img {
     height: 120px;
-    width: 190px;
+    width: 155px;
     border-radius: 4px;
     /* border: 1px solid #000; */
   }
