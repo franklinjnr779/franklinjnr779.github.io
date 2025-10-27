@@ -62,7 +62,7 @@
   width: 22%;
 }
 .wy2 :hover {
-  opacity: 0.9;
+  opacity: 0.95;
   box-shadow: none;
   cursor: default;
   box-shadow: none;
@@ -85,12 +85,12 @@
 }
 .gX-img img {
   height: 110px;
-  width: 180px;
+  width: 125px;
   border-radius: 4px;
   /* border: 1px solid #000; */
 }
 .gptxt-c {
-  height: 50px;
+  height: 35px;
   width: 91.66%;
   display: flex;
   justify-content: center;
@@ -119,6 +119,66 @@
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
   /* border: 1px solid #000; */
+}
+:root {
+  --size: 22px;
+  --heart-stroke: 1px;
+  --accent: rgb(15, 138, 12);
+  --muted: gray;
+}
+
+.fv-c {
+  height: auto;
+  width: 93%;
+  display: flex;
+  justify-content: end;
+  /* border: 1px solid #f80505; */
+}
+
+.fav-btn {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.fav-svg {
+  width: 24px;
+  height: 23px;
+  display: block;
+}
+
+.heart-fill {
+  fill: gray;
+  stroke: var(--muted);
+  stroke-width: 18px;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.fav-btn.liked .heart-fill {
+  fill: var(--accent); /* 👈 fills red when liked */
+  stroke: var(--accent);
+  animation: pop 0.25s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fav-btn.animate {
+  animation: pop 240ms cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 .bar-ads-c {
   height: auto;
@@ -267,9 +327,11 @@
   }
   .wy2 {
     padding-top: 12px;
-    height: 200px;
+    height: 205px;
     width: 48%;
     border-radius: 4px;
+    /* border: 1px solid #000; */
+    padding-bottom: 5px;
   }
   .bar-ads-c {
     height: auto;
