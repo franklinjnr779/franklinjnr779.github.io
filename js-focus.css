@@ -127,11 +127,14 @@ body {
 }
 .zeX {
   font-size: 9px;
-  color: #fff;
   padding: 2px 6px;
   border-radius: 6px;
   background-color: rgb(11, 36, 146);
   backdrop-filter: blur(2px);
+}
+.zeX a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .lobtn {

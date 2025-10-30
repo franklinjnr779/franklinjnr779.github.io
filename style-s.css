@@ -199,6 +199,12 @@ input::placeholder {
   text-decoration: none;
   /* letter-spacing: 0.8px; */
 }
+.s-enter {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+}
 .sle-C {
   display: flex;
   align-items: center;

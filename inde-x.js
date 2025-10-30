@@ -4,9 +4,9 @@ document.querySelectorAll('[data-link]').forEach(btn => {
   });
 });
 
-// document.getElementById('bxone').addEventListener('click', function () {
-//     window.location.href = 'js-focus.html'; 
-// });
+document.getElementById('sIk').addEventListener('click', function () {
+    window.location.href = '/sign-in/index.html'; 
+});
 // document.getElementById('bxtwo').addEventListener('click', function () {
 //     window.location.href = 'js-focus2.html'; 
 // });
