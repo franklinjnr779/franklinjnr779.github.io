@@ -156,7 +156,7 @@
   fill: gray;
   stroke: var(--muted);
   stroke-width: 18px;
-  transition: fill 0.3s ease, stroke 0.3s ease;
+  transition: fill 0.2s ease, stroke 0.2s ease;
 }
 
 .fav-btn.liked .heart-fill {
@@ -170,7 +170,7 @@
     transform: scale(1);
   }
   40% {
-    transform: scale(1.25);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(1);

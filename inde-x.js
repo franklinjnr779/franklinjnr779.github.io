@@ -3,10 +3,6 @@ document.querySelectorAll('[data-link]').forEach(btn => {
     window.location.href = btn.dataset.link;
   });
 });
-
-document.getElementById('sIk').addEventListener('click', function () {
-    window.location.href = '/sign-in/index.html'; 
-});
 // document.getElementById('bxtwo').addEventListener('click', function () {
 //     window.location.href = 'js-focus2.html'; 
 // });

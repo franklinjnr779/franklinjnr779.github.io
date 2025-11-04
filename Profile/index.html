@@ -38,37 +38,74 @@
                     <h2 class="zx-2">account</h2>
                 </div>
 
+                <!-- Full Name -->
                 <div class="nio col-12">
                     <input class="nio-x" type="text" placeholder="First and Last Name" required maxlength="35">
                 </div>
+
+                <!-- Email with Icon INSIDE input -->
                 <div class="nio col-12">
                     <input class="nio-x" type="email" placeholder="E-mail" required>
+                    <span class="icon-wrap">
+                        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M20 4H4c-1.1 0-2 .9-2 
+        2v12c0 1.1.9 2 2 
+        2h16c1.1 0 2-.9 
+        2-2V6c0-1.1-.9-2-2-2zm0 
+        4-8 5-8-5V6l8 
+        5 8-5v2z" />
+                        </svg>
+                    </span>
                 </div>
+
+                <!-- Password -->
                 <div class="nio col-12">
-                    <input class="nio-x" type="number" placeholder="Password" required maxlength="15">
+                    <input class="nio-x password" type="password" placeholder="Password" required maxlength="15">
+                    <span class="icon-wrap">
+                        <svg class="toggle-pass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M12 4.5C7 4.5 2.73 7.61 
+        1 12c1.73 4.39 6 7.5 11 
+        7.5s9.27-3.11 11-7.5C21.27 
+        7.61 17 4.5 12 4.5zm0 
+        12a4.5 4.5 0 1 1 
+        0-9 4.5 4.5 0 0 1 
+        0 9z" />
+                        </svg>
+                    </span>
                 </div>
+
+                <!-- Confirm Password -->
                 <div class="nio col-12">
-                    <input class="nio-x" type="number" placeholder="Confirm password" required maxlength="15">
+                    <input class="nio-x password" type="password" placeholder="Confirm password" required
+                        maxlength="15">
+                    <span class="icon-wrap">
+                        <svg class="toggle-pass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M12 4.5C7 4.5 2.73 7.61 
+        1 12c1.73 4.39 6 7.5 11 
+        7.5s9.27-3.11 11-7.5C21.27 
+        7.61 17 4.5 12 4.5zm0 
+        12a4.5 4.5 0 1 1 
+        0-9 4.5 4.5 0 0 1 
+        0 9z" />
+                        </svg>
+                    </span>
                 </div>
+
+                <!-- Remember me -->
+                <div class="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label class="re-cbox" for="remember">Remember me</label>
+                </div>
+
                 <div class="frm-summit">
                     <button class="sub" type="submit">Sign up</button>
                     <button class="sub-x" type="reset">×</button>
                 </div>
             </form>
+
         </div>
     </div>
-    <div class="oik"
-        style="display: flex; align-items: center; justify-content: center; height: auto; width: 100%; border: 1px dashed #000;">
-        <div class="megtrn" style="display: block; height: auto; width: 91.66%; border: 1px solid #008000;">
-            <div class="ppuic-1" style="height: 30px; width: 90%; border: 1px solid #000;">1</div>
-            <div class="ppuic-1" style="height: 30px; width: 89%; border: 1px solid #000;">2</div>
-            <div class="ppuic-1" style="height: 30px; width: 88%; border: 1px solid #000;">3</div>
-            <div class="ppuic-1" style="height: 30px; width: 87%; border: 1px solid #000;">4</div>
-            <div class="ppuic-1" style="height: 30px; width: 86%; border: 1px solid #000;">5</div>
-            <div class="ppuic-1" style="height: 30px; width: 85%; border: 1px solid #000;">6</div>
-            <div class="ppuic-1" style="height: 30px; width: 84%; border: 1px solid #000;">7</div>
-        </div>
-    </div>
+
 </body>
 <script src="inde-x.js"></script>
 <script src="menu_nav.js"></script>

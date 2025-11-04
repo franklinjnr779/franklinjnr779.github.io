@@ -1,150 +1,32 @@
-<!-- Multi-Instance Clickable Love Icon Component -->
+<!DOCTYPE html>
+<html lang="en">
 
-<style>
-    :root {
-        --size: 44px;
-        --heart-stroke: 2px;
-        --accent: #ef476f;
-        --muted: #888;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~dummy.css">
+</head>
 
-    .fav-btn {
-        height: var(--size);
-        width: var(--size);
-        display: inline-grid;
-        place-items: center;
-        border: 0;
-        background: transparent;
-        padding: 0;
-        cursor: pointer;
-        line-height: 1;
-        user-select: none;
-    }
+<body>
+    <div class="frmX">
+        <form action="submit">
+            <input type="text" placeholder="Search products and services " aria-label="search">
+            <div class="fxs">
+                <button class="s-enter">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Search">
+                            <path id="Icon"
+                                d="M14 14L10 10M11.3333 6.66667C11.3333 9.244 9.244 11.3333 6.66667 11.3333C4.08934 11.3333 2 9.244 2 6.66667C2 4.08934 4.08934 2 6.66667 2C9.244 2 11.3333 4.08934 11.3333 6.66667Z"
+                                stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </form>
+        <ul id="suggestions" class="suggestions"></ul>
+    </div>
 
-    .fav-btn:focus {
-        outline: 3px solid rgba(239, 71, 111, 0.18);
-        outline-offset: 4px;
-        border-radius: 8px;
-    }
+</body>
 
-    .fav-svg {
-        width: calc(var(--size) * 0.7);
-        height: calc(var(--size) * 0.7);
-        display: block;
-        pointer-events: none;
-    }
-
-    .heart-outline {
-        fill: none;
-        stroke: var(--muted);
-        stroke-width: var(--heart-stroke);
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
-    .fav-btn.liked .heart-fill {
-        fill: var(--accent);
-        stroke: var(--accent);
-        stroke-width: var(--heart-stroke);
-    }
-
-    .heart-fill {
-        fill: transparent;
-        stroke: var(--muted);
-        stroke-width: var(--heart-stroke);
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
-    @keyframes pop {
-        0% {
-            transform: scale(1);
-        }
-
-        40% {
-            transform: scale(1.25);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    .fav-btn.animate {
-        animation: pop 240ms cubic-bezier(.2, .9, .2, 1);
-    }
-</style>
-
-<!-- Example usage: -->
-<!-- <button class="fav-btn" data-id="product-1">...</button> -->
-<!-- <button class="fav-btn" data-id="product-2">...</button> -->
-
-<button class="fav-btn" data-id="product-1" aria-pressed="false" aria-label="Add to favorites">
-    <svg class="fav-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path class="heart-fill"
-            d="M12.001 21s-7.333-4.873-9.333-8.273C-0.333 8.327 3 4 7.333 6.667 9.447 7.87 11.09 9.47 12 10.333c.91-.863 2.553-2.463 4.667-3.666C21 4 24.333 8.327 21.333 12.727 19.333 16.127 12.001 21 12.001 21z" />
-        <path class="heart-outline"
-            d="M12.001 21s-7.333-4.873-9.333-8.273C-0.333 8.327 3 4 7.333 6.667 9.447 7.87 11.09 9.47 12 10.333c.91-.863 2.553-2.463 4.667-3.666C21 4 24.333 8.327 21.333 12.727 19.333 16.127 12.001 21 12.001 21z" />
-    </svg>
-</button>
-
-<button class="fav-btn" data-id="product-2" aria-pressed="false" aria-label="Add to favorites">
-    <svg class="fav-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path class="heart-fill"
-            d="M12.001 21s-7.333-4.873-9.333-8.273C-0.333 8.327 3 4 7.333 6.667 9.447 7.87 11.09 9.47 12 10.333c.91-.863 2.553-2.463 4.667-3.666C21 4 24.333 8.327 21.333 12.727 19.333 16.127 12.001 21 12.001 21z" />
-        <path class="heart-outline"
-            d="M12.001 21s-7.333-4.873-9.333-8.273C-0.333 8.327 3 4 7.333 6.667 9.447 7.87 11.09 9.47 12 10.333c.91-.863 2.553-2.463 4.667-3.666C21 4 24.333 8.327 21.333 12.727 19.333 16.127 12.001 21 12.001 21z" />
-    </svg>
-</button>
-
-<script>
-    (function () {
-        const STORAGE_KEY = 'favorite_state_multi';
-
-        // Load saved data for all hearts
-        let data = {};
-        try {
-            data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-        } catch {
-            data = {};
-        }
-
-        function save() {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-        }
-
-        function initHeart(btn) {
-            const id = btn.dataset.id || crypto.randomUUID();
-            if (!btn.dataset.id) btn.dataset.id = id;
-
-            let liked = !!data[id];
-
-            function updateUI() {
-                btn.setAttribute('aria-pressed', String(liked));
-                btn.classList.toggle('liked', liked);
-            }
-
-            function toggle() {
-                liked = !liked;
-                data[id] = liked;
-                save();
-                btn.classList.remove('animate');
-                void btn.offsetWidth;
-                btn.classList.add('animate');
-                updateUI();
-            }
-
-            btn.addEventListener('click', toggle);
-            btn.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggle();
-                }
-            });
-
-            updateUI();
-        }
-
-        document.querySelectorAll('.fav-btn').forEach(initHeart);
-    })();
-</script>
+</html>

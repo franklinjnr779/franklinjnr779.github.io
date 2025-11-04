@@ -1,33 +1,76 @@
-.links-c {
-  height: 110%;
-  border-right: none;
-  width: 55%;
+.fxs {
   display: flex;
-  padding-right: 5px;
-  align-items: start;
-  justify-content: start;
-  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 36px;
+  /* border: 1px solid green; */
 }
-.mecadiv {
-  border: 1px solid purple;
-  height: auto;
-  width: auto;
-  padding: 6px 16px;
+.fxs :hover {
+  cursor: pointer;
+}
+
+.frmX {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center; /* center horizontally */
+  justify-content: center;
+  width: 50%; /* takes full row */
+  position: relative;
+  /* border: 1px solid #000000; */
+}
+
+form {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  display: flex;
+  width: 290px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 2px solid #808080;
+  position: relative;
+  padding-right: 5px;
+}
+form:hover,
+:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+input {
+  background-color: transparent;
+  height: 35px;
+  display: flex;
+  width: 90%;
+  color: #2e2e2e;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  border: none;
+  align-items: center;
+  font-size: 14px;
+  outline: none;
+}
+input:hover,
+:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+input::placeholder {
+  color: gray;
+  font-size: 12px;
+  text-decoration: none;
+  /* letter-spacing: 0.8px; */
+}
+.s-enter {
   display: flex;
   justify-content: center;
+  height: 35px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0 6px 6px 0; /* rounded only at bottom */
   align-items: center;
-}
-.links-c-main {
-  height: 100%;
-  width: 95%;
-  display: inline-flex;
-  align-items: center;
-  padding-left: 0;
-  overflow-x: auto;
-  white-space: nowrap;
-  mask-image: linear-gradient(to right, black 85%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask-composite: destination-in;
-  border: 1px solid green;
+  border: none;
+  outline: none;
 }

@@ -154,6 +154,7 @@ body {
   margin-bottom: 12px;
   justify-content: center;
   align-items: center;
+  position: relative; /* allows icons inside input */
 }
 
 .nio-x {
@@ -161,6 +162,8 @@ body {
   padding: 10px 16px;
   border-radius: 6px;
   width: 80%;
+  padding-right: 45px; /* space for icon */
+  position: relative;
   outline: none;
   background-color: #fff;
   color: #141414;
@@ -170,7 +173,53 @@ body {
   border: 2px solid grey;
   outline: grey;
 }
+.icon-wrap {
+  position: absolute;
+  right: 55px; /* aligns with your 80% input width inside .nl */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* email icon not clickable */
+}
+.email-icon,
+.toggle-pass {
+  width: 18px;
+  height: 18px;
+  fill: gray;
+  opacity: 0.8;
+  pointer-events: auto; /* only for password icons */
+  cursor: pointer;
+}
+.toggle-pass:hover {
+  opacity: 1;
+}
 
+.email-icon:hover {
+  opacity: 1;
+}
+
+/* Remember me styling */
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 80%;
+  margin: auto;
+  gap: 8px;
+  font-size: 13px;
+  color: #202020;
+}
+.re-cbox {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  width: auto;
+  color: #141414;
+  font-size: 11px;
+  /* border: 1px solid #000; */
+}
 .frm-summit {
   width: auto;
   height: auto;

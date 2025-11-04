@@ -34,26 +34,111 @@
         <div class="nl-container col-xl-12 col-lg-12 col-12 col-md-12">
             <form class="nl" method="post">
                 <div class="t2 col-12">
-                    <h2 class="zx-1">Sign</h2>
-                    <h2 class="zx-2">in</h2>
+                    <h2 class="zx-1">Create</h2>
+                    <h2 class="zx-2">account</h2>
+                </div>
+
+                <div class="nio col-12">
+                    <input class="nio-x" type="text" placeholder="First and Last Name" required maxlength="35">
                 </div>
 
                 <div class="nio col-12">
                     <input class="nio-x" type="email" placeholder="E-mail" required>
+                    <div class="icon-wrap">
+                        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+          1.1.9 2 2 2h16c1.1 0 2-.9 
+          2-2V6c0-1.1-.9-2-2-2zm0 
+          4-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
                 </div>
+
                 <div class="nio col-12">
-                    <input class="nio-x" type="number" placeholder="Password" required maxlength="15">
+                    <input class="nio-x password" type="password" placeholder="Password" required maxlength="15">
+                    <div class="icon-wrap">
+                        <!-- Eye open -->
+                        <svg class="toggle-pass eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M12 4.5C7 4.5 2.73 7.61 1 
+          12c1.73 4.39 6 7.5 11 
+          7.5s9.27-3.11 11-7.5C21.27 
+          7.61 17 4.5 12 4.5zm0 
+          12a4.5 4.5 0 1 1 
+          0-9 4.5 4.5 0 0 1 
+          0 9z" />
+                        </svg>
+
+                        <!-- Eye slash -->
+                        <svg class="toggle-pass eye-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M12 4.5C7 4.5 2.73 7.61 1 12
+          c.53 1.36 1.35 2.61 2.4 3.7l-1.4 1.4 
+          1.4 1.4L4.8 19C6.8 20.1 9.3 20.5 
+          12 20.5c5 0 9.27-3.11 11-7.5
+          -.81-2.05-2.22-3.86-4-5.1l1.4-1.4
+          -1.4-1.4-1.6 1.6c-1.4-.7-3-.1-3.8 
+          1.2C13.6 7.4 12.8 7 12 7
+          c-1.5 0-2.9.7-3.7 1.8l1.5 
+          1.5C10.4 9.5 11.2 9 12 9
+          c1.7 0 3 1.3 3 3 0 .8-.3 1.6-.9 
+          2.1l1.5 1.5c.7-.8 1.1-1.9 
+          1.1-3.1 0-.6-.1-1.1-.3-1.6
+          .7-.2 1.4-.3 2.1-.3 1.5 
+          0 2.9.5 4 1.3-1.6 3.7-5.4 
+          6.5-9.5 6.5-2.1 0-4.1-.7-5.7-1.9
+          L6 16.8c1.7 1.1 3.8 1.7 
+          6 1.7 5 0 9.27-3.11 11-7.5
+          -.81-2.05-2.22-3.86-4-5.1L12 
+          4.5z" />
+                        </svg>
+                    </div>
                 </div>
+
+                <div class="nio col-12">
+                    <input class="nio-x password" type="password" placeholder="Confirm password" required
+                        maxlength="15">
+                    <div class="icon-wrap">
+                        <!-- Eye open -->
+                        <svg class="toggle-pass eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="gray" d="M12 4.5C7 4.5 2.73 7.61 1 
+          12c1.73 4.39 6 7.5 11 
+          7.5s9.27-3.11 11-7.5C21.27 
+          7.61 17 4.5 12 4.5zm0 
+          12a4.5 4.5 0 1 1 
+          0-9 4.5 4.5 0 0 1 
+          0 9z" />
+                        </svg>
+
+                        <!-- Eye slash -->
+                        <svg class="eye-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20"
+                            height="20">
+                            <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19C5 19 1 12 1 12a21.8 21.8 0 0 1 5.07-5.94">
+                            </path>
+                            <path d="M9.88 9.88a3 3 0 0 0 4.24 4.24"></path>
+                            <path d="M1 1l22 22"></path>
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
                 <div class="frm-summit">
                     <button class="sub" type="submit">Sign up</button>
                     <button class="sub-x" type="reset">×</button>
                 </div>
             </form>
+
+
         </div>
     </div>
 </body>
 <script src="inde-x.js"></script>
 <script src="menu_nav.js"></script>
+<script src="profile.js"></script>
 
 
 </html>
