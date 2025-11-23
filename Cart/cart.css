@@ -1,0 +1,811 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.c-sec {
+  height: auto;
+  /* border: 1px solid #000; */
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  background-color: #faf9f6;
+}
+.par-c {
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  width: 90%;
+}
+/* first-flex */
+.cart-con {
+  height: auto;
+  border: 1px solid gainsboro;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 6px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  width: 60%;
+}
+.c-head {
+  height: 40px;
+  /* border: 1px solid orangered; */
+  display: flex;
+  padding-right: 5px;
+  padding-left: 1px;
+  align-items: center;
+  width: 98%;
+}
+
+.carti {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 65%;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+  /* border: 1px solid #000; */
+}
+.carto {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 35%;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(107, 107, 107);
+}
+
+.pdframe {
+  height: auto;
+  background-color: rgb(238, 237, 237);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 15px;
+  border-radius: 2px;
+  width: 98%;
+  padding-bottom: 15px;
+  /* border: 1px solid #000; */
+}
+.pdc {
+  height: auto;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: start;
+  width: 75%;
+}
+.pimg {
+  height: 110px;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+.pimg img {
+  height: 100px;
+  width: 110px;
+  border: 1px solid gray;
+}
+.p-txt-c {
+  width: 67%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.p-txt {
+  width: 100%;
+  /* border: 1px solid purple; */
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  height: auto;
+}
+.mini-dc {
+  height: auto;
+  display: flex;
+  width: 100%;
+  padding-top: 8px;
+  font-size: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.cmd-1 {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.pdprice-c {
+  /* border: 1px solid green; */
+  display: block;
+  height: 111px;
+  width: 25%;
+}
+.psp {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: end;
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+.deli {
+  height: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+
+/* second-flex */
+.sub-total-c {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: start;
+  height: 100%;
+  width: 30%;
+}
+
+.s-chk {
+  border: 1px solid gainsboro;
+  display: block;
+  background-color: #fff;
+  height: auto;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+.cs-coupon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+.csum {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+  width: 50%;
+  /* border: 1px solid gainsboro; */
+}
+.xcou-c {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+  /* border: 1px solid gainsboro; */
+}
+.xcou {
+  font-size: 9px;
+  color: rgb(15, 138, 12);
+  padding: 2px 6px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: rgb(214, 253, 230);
+  backdrop-filter: blur(2px);
+}
+
+.jigsa {
+  /* border: 1px solid red; */
+  display: flex;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+.subtx-c {
+  border: 1px dashed gainsboro;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.csub {
+  /* border: 1px solid #000; */
+  height: auto;
+  width: 50%;
+  padding-left: 5px;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+.cspsp {
+  /* border: 1px solid #000; */
+  height: auto;
+  display: flex;
+  font-size: 15px;
+  justify-content: end;
+  padding-right: 5px;
+  width: 50%;
+}
+.c-id-c {
+  border: 1px dashed gainsboro;
+  height: auto;
+  width: 100%;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.c-nameid {
+  height: auto;
+  width: 50%;
+  padding-left: 5px;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+.c-id {
+  /* border: 1px solid #000; */
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+.check-out-c {
+  /* border: 1px solid #000; */
+  height: auto;
+  display: flex;
+  font-size: 15px;
+  padding-top: 30px;
+  justify-content: center;
+  width: 100%;
+}
+.t-checkout {
+  padding: 10px 50px;
+  letter-spacing: 0.4px;
+  background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
+  /* background: linear-gradient(to right, orangered, rgb(255, 145, 0)); */
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .c-sec {
+    height: auto;
+    /* border: 1px solid #000; */
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #faf9f6;
+  }
+  .par-c {
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    width: 92%;
+  }
+  /* first-flex */
+  .cart-con {
+    height: auto;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .c-head {
+    height: 40px;
+    /* border: 1px solid orangered; */
+    display: flex;
+    padding-right: 5px;
+    padding-left: 1px;
+    align-items: center;
+    width: 98%;
+  }
+
+  .carti {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 65%;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222;
+    /* border: 1px solid #000; */
+  }
+  .carto {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 35%;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+  }
+
+  .pdframe {
+    height: auto;
+    background-color: rgb(238, 237, 237);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 15px;
+    border-radius: 2px;
+    width: 98%;
+    padding-bottom: 15px;
+    /* border: 1px solid #000; */
+  }
+  .pdc {
+    height: auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: start;
+    width: 75%;
+  }
+  .pimg {
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+  }
+  .pimg img {
+    height: 95px;
+    width: 100px;
+    border: none;
+  }
+  .p-txt-c {
+    width: 67%;
+    height: 100%;
+    /* border: 1px solid red; */
+  }
+  .p-txt {
+    width: 100%;
+    /* border: 1px solid purple; */
+    font-weight: 600;
+    font-size: 14px;
+    color: #222;
+    height: auto;
+  }
+  .mini-dc {
+    height: auto;
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .cmd-1 {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .pdprice-c {
+    /* border: 1px solid green; */
+    display: block;
+    height: 111px;
+    width: 25%;
+  }
+  .psp {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: end;
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+  .deli {
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+
+  /* second-flex */
+  .sub-total-c {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+  }
+
+  .s-chk {
+    border: 1px solid gainsboro;
+    display: block;
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .csum {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222;
+  }
+  .jigsa {
+    /* border: 1px solid red; */
+    display: flex;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  .subtx-c {
+    border: 1px dashed gainsboro;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  .csub {
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #5f5f5f;
+  }
+  .cspsp {
+    /* border: 1px solid #000; */
+    height: auto;
+    display: flex;
+    font-size: 15px;
+    justify-content: end;
+    padding-right: 5px;
+    width: 50%;
+  }
+  .c-id-c {
+    border: 1px dashed gainsboro;
+    height: auto;
+    width: 100%;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  .c-nameid {
+    height: auto;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #5f5f5f;
+  }
+  .c-id {
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    color: #5f5f5f;
+  }
+  .check-out-c {
+    /* border: 1px solid #000; */
+    height: auto;
+    display: flex;
+    font-size: 15px;
+    padding-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  .t-checkout {
+    padding: 10px 50px;
+    letter-spacing: 0.4px;
+    background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
+    /* background: linear-gradient(to right, orangered, orange); */
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .c-sec {
+    height: auto;
+    /* border: 1px solid #000; */
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #faf9f6;
+  }
+  .par-c {
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    width: 90%;
+  }
+  /* first-flex */
+  .cart-con {
+    height: auto;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    width: 65%;
+  }
+  .c-head {
+    height: 40px;
+    /* border: 1px solid orangered; */
+    display: flex;
+    padding-right: 5px;
+    padding-left: 1px;
+    align-items: center;
+    width: 98%;
+  }
+
+  .carti {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 65%;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222;
+    /* border: 1px solid #000; */
+  }
+  .carto {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 35%;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+  }
+
+  .pdframe {
+    height: auto;
+    background-color: rgb(238, 237, 237);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 15px;
+    border-radius: 2px;
+    width: 98%;
+    padding-bottom: 15px;
+    /* border: 1px solid #000; */
+    padding-left: 5px;
+  }
+  .pdc {
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: start;
+    width: 85%;
+  }
+  .pimg {
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+  }
+  .pimg img {
+    height: 98px;
+    width: 100px;
+    border: 1px solid gray;
+  }
+  .p-txt-c {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+  }
+  .p-txt {
+    width: 100%;
+    /* border: 1px solid purple; */
+    font-weight: 600;
+    font-size: 14px;
+    color: #222;
+    height: auto;
+  }
+  .mini-dc {
+    height: auto;
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .cmd-1 {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .pdprice-c {
+    /* border: 1px solid green; */
+    display: block;
+    height: 111px;
+    width: 15%;
+  }
+  .psp {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: end;
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+  .deli {
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+
+  /* second-flex */
+  .sub-total-c {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: start;
+    height: 100%;
+    width: 35%;
+  }
+
+  .s-chk {
+    border: 1px solid gainsboro;
+    display: block;
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .csum {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222;
+  }
+  .jigsa {
+    /* border: 1px solid red; */
+    display: flex;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  .subtx-c {
+    border: 1px dashed gainsboro;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  .csub {
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #5f5f5f;
+  }
+  .cspsp {
+    /* border: 1px solid #000; */
+    height: auto;
+    display: flex;
+    font-size: 15px;
+    justify-content: end;
+    padding-right: 5px;
+    width: 50%;
+  }
+  .c-id-c {
+    border: 1px dashed gainsboro;
+    height: auto;
+    width: 100%;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  .c-nameid {
+    height: auto;
+    width: 50%;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #5f5f5f;
+  }
+  .c-id {
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    color: #5f5f5f;
+  }
+  .check-out-c {
+    /* border: 1px solid #000; */
+    height: auto;
+    display: flex;
+    font-size: 15px;
+    padding-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  .t-checkout {
+    padding: 10px 50px;
+    letter-spacing: 0.4px;
+    background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
+    /* background: linear-gradient(to right, orangered, orange); */
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+  }
+}

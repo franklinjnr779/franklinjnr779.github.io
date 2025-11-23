@@ -221,7 +221,6 @@ input::placeholder {
 }
 .f-cnt a:hover,
 :focus {
-  text-decoration: underline;
   color: rgb(15, 138, 12);
 }
 .f-cnt {
@@ -907,7 +906,6 @@ footer {
   }
   .f-cnt a:hover,
   :focus {
-    text-decoration: underline;
     color: rgb(15, 138, 12);
   }
   .f-cnt {
@@ -945,7 +943,6 @@ footer {
   }
   .itd-x:hover,
   :focus {
-    /* background: linear-gradient(to right, rgb(15, 138, 12), rgb(19, 71, 102)); */
     color: #ffffff;
   }
   .x-gdi {
@@ -961,7 +958,6 @@ footer {
   }
   .x-gdi a:hover,
   :focus {
-    text-decoration: underline;
     color: rgb(15, 138, 12);
   }
 
@@ -1564,7 +1560,6 @@ footer {
   }
   .f-cnt a:hover,
   :focus {
-    text-decoration: underline;
     color: rgb(15, 138, 12);
   }
   .f-cnt {
@@ -2233,7 +2228,6 @@ footer {
   }
   .f-cnt a:hover,
   :focus {
-    text-decoration: underline;
     color: rgb(19, 71, 102);
   }
   .f-cnt {

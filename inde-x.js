@@ -3,9 +3,9 @@ document.querySelectorAll('[data-link]').forEach(btn => {
     window.location.href = btn.dataset.link;
   });
 });
-// document.getElementById('bxtwo').addEventListener('click', function () {
-//     window.location.href = 'js-focus2.html'; 
-// });
+document.getElementById('cat').addEventListener('click', function () {
+    window.location.href = '/Cart/index.html'; 
+});
 // document.getElementById('signUpme').addEventListener('click', function () {
 //     window.location.href = '/Profile/index.html'; 
 // });
