@@ -276,8 +276,8 @@
 .t-checkout {
   padding: 10px 50px;
   letter-spacing: 0.4px;
-  background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
-  /* background: linear-gradient(to right, orangered, rgb(255, 145, 0)); */
+  /* background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12)); */
+  background: linear-gradient(to right, orangered, rgb(255, 145, 0));
   font-weight: 600;
   font-size: 12px;
   display: flex;
@@ -536,8 +536,8 @@
   .t-checkout {
     padding: 10px 50px;
     letter-spacing: 0.4px;
-    background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
-    /* background: linear-gradient(to right, orangered, orange); */
+    /* background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12)); */
+    background: linear-gradient(to right, orangered, rgb(255, 145, 0));
     font-weight: 600;
     font-size: 12px;
     display: flex;
@@ -797,8 +797,8 @@
   .t-checkout {
     padding: 10px 50px;
     letter-spacing: 0.4px;
-    background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12));
-    /* background: linear-gradient(to right, orangered, orange); */
+    /* background: linear-gradient(to right, rgb(19, 71, 102), rgb(15, 138, 12)); */
+    background: linear-gradient(to right, orangered, rgb(255, 145, 0));
     font-weight: 600;
     font-size: 12px;
     display: flex;
