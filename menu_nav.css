@@ -59,14 +59,14 @@ body {
 .name-1-a {
   height: auto;
   width: auto;
-  color: rgb(19, 71, 102);
+  color: gray;
   /* border: 1px solid darkgray; */
 }
 
 .name-2-a {
   height: auto;
   width: auto;
-  color: rgb(15, 138, 12);
+  color: orangered;
   /* border: 1px solid darkgray; */
 }
 
@@ -106,7 +106,7 @@ body {
 }
 .side-nav ul li a:hover,
 :focus {
-  color: rgb(15, 138, 12);
+  color: orangered;
 }
 
 body.lock-scroll {
@@ -197,7 +197,7 @@ body.lock-scroll {
   .x-in,
   .x-up a :hover,
   :focus {
-    color: rgb(15, 138, 12);
+    color: orangered;
   }
 
   .x-up {
