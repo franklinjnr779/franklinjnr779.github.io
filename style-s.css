@@ -1405,7 +1405,7 @@ footer {
     width: auto;
     font-weight: 700;
     font-size: 25px;
-    color: rgb(19, 71, 102);
+    color: orangered;
     letter-spacing: 0.3px;
   }
   .tx2p {
@@ -1424,7 +1424,7 @@ footer {
     width: auto;
     font-weight: 700;
     font-size: 25px;
-    color: rgb(15, 138, 12);
+    color: gray;
     letter-spacing: 0.3px;
   }
   .menuboxcon {
@@ -1618,7 +1618,8 @@ footer {
   .x-gdi a:hover,
   :focus {
     text-decoration: underline;
-    color: rgb(15, 138, 12);
+    color: orangered;
+    /* background: linear-gradient(to right, orangered, rgb(255, 145, 0)); */
   }
   .gdi {
     display: flex;
@@ -2227,10 +2228,7 @@ footer {
     text-decoration: none;
     font-size: 14px;
   }
-  .f-cnt a:hover,
-  :focus {
-    color: rgb(19, 71, 102);
-  }
+
   .f-cnt {
     display: flex;
     justify-content: center;
@@ -2252,7 +2250,7 @@ footer {
     /* border: 1px solid #000; */
     border-top: none; /* so it looks attached */
     border-radius: 0 0 6px 6px; /* rounded only at bottom */
-    max-height: 120px;
+    max-height: 125px;
     overflow-y: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: absolute;
