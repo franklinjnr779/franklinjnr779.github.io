@@ -80,7 +80,7 @@ body {
   width: auto;
   font-weight: 700;
   font-size: 25px;
-  color: orangered;
+  color: #333;
   letter-spacing: 0.3px;
 }
 .tx2p {
@@ -99,7 +99,7 @@ body {
   width: auto;
   font-weight: 700;
   font-size: 25px;
-  color: gray;
+  color: orangered;
   letter-spacing: 0.3px;
 }
 .menuboxcon {
@@ -761,7 +761,7 @@ footer {
     width: auto;
     font-weight: 700;
     font-size: 25px;
-    color: gray;
+    color: #696969;
     letter-spacing: 0.3px;
   }
   .menuboxcon {
@@ -1424,7 +1424,7 @@ footer {
     width: auto;
     font-weight: 700;
     font-size: 25px;
-    color: gray;
+    color: #696969;
     letter-spacing: 0.3px;
   }
   .menuboxcon {
@@ -2080,7 +2080,7 @@ footer {
     width: auto;
     font-weight: 700;
     font-size: 22px;
-    color: gray;
+    color: orangered;
     letter-spacing: 0.3px;
   }
   .tx2p {
@@ -2101,7 +2101,7 @@ footer {
     font-weight: 700;
     font-size: 22px;
     /* border: 1px solid #000; */
-    color: orangered;
+    color: #696969;
     letter-spacing: 0.3px;
   }
   .mbxcontainer {
